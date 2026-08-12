@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+Thumbs.db
+.gemini/
+.agents/
+.vscode/
+dist/
+build/
+*.log
