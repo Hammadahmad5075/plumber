@@ -8933,3 +8933,63 @@ label {
   fill: #ffffff;
 }
 
+/* Trust Badges Grid and Styles */
+.trust-badges-grid {
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+  flex-flow: row;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  width: 100%;
+  max-width: 850px;
+  display: grid;
+}
+
+@media screen and (max-width: 991px) {
+  .trust-badges-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .trust-badges-grid {
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+  }
+}
+
+.trust-badge-item {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 12px;
+}
+
+.trust-badge-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color--theme-color-01);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.trust-badge-icon-wrapper svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color--neutral-white);
+}
+
+.trust-badge-label {
+  font-family: var(--font--primary-font);
+  color: var(--color--neutral-04);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+
